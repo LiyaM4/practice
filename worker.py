@@ -19,6 +19,6 @@ class Worker:
         print(f"Год приема: {self.year_of_employment}")
         print("-" * 20)
 
-    def get_work_experience(self):
+    def get_work_experience(self, current_year):
         current_year = datetime.datetime.now().year
         return current_year - self.year_of_employment
